@@ -1,0 +1,7 @@
+C:\Users\WWW\source\repos\CourseWork2\TestTemp\bin\Debug\TestTemp.exe.config
+C:\Users\WWW\source\repos\CourseWork2\TestTemp\bin\Debug\TestTemp.exe
+C:\Users\WWW\source\repos\CourseWork2\TestTemp\bin\Debug\TestTemp.pdb
+C:\Users\WWW\source\repos\CourseWork2\TestTemp\obj\Debug\TestTemp.csprojAssemblyReference.cache
+C:\Users\WWW\source\repos\CourseWork2\TestTemp\obj\Debug\TestTemp.csproj.CoreCompileInputs.cache
+C:\Users\WWW\source\repos\CourseWork2\TestTemp\obj\Debug\TestTemp.exe
+C:\Users\WWW\source\repos\CourseWork2\TestTemp\obj\Debug\TestTemp.pdb

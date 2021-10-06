@@ -1,0 +1,30 @@
+﻿<Window x:Class="CourseWork2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CourseWork2"
+        mc:Ignorable="d"
+        Title="Головне меню" Height="500" Width="400" VerticalAlignment="Center">
+    <Grid>
+        <!--<Grid.RowDefinitions>
+            <RowDefinition Height="53*"/>
+            <RowDefinition Height="19*"/>
+        </Grid.RowDefinitions>-->
+
+        <ScrollViewer Margin="5,5,0,93" Background="#FFF62451" Foreground="White" >
+            <TextBlock Margin="5 0 0 0" Text="" FontSize="15" x:Name="MainTextBlock" Background="#FF2D3A43"/>
+        </ScrollViewer>
+        <StackPanel VerticalAlignment="Bottom" Margin="0 0 0 0">
+            <Button Margin="4 0 16 1" Content="Добавити товар" Click="Add_Product_Click" Background="#FF2D3A43" Foreground="White" BorderBrush="{x:Null}"/>
+            <Button Margin="4 0 16 1" Content="Продати товар" Click="Sell_Product_Click" Background="#FF2D3A43" BorderBrush="{x:Null}" Foreground="White" />
+            <Button Margin="4 0 16 1" Content="Пошук, редагування та видалення товару" Click="Remove_Product_Click" Background="#FF2D3A43" BorderBrush="{x:Null}" Foreground="White" />
+            <Grid>
+                <TextBlock x:Name="MoneyTextBlock" Text="$" FontSize="20" Margin="5 1 0 0" HorizontalAlignment="Left" VerticalAlignment="Top" Background="#FF2D3A43" Foreground="White"/>
+                <TextBlock x:Name="SpendMoneyTextBlock" Text="Витрачено:" Height="24" FontSize="13" Margin="0 1 87 0" HorizontalAlignment="Right" VerticalAlignment="Top" Background="#FF2D3A43" Foreground="White" TextAlignment="Center"/>
+                <Button Margin="0 0 16 0" Height="13" Width="70" FontSize="7" Content="Зберегти" Click="Save_Click" VerticalAlignment="Top" HorizontalAlignment="Right" Background="#FF2D3A43" Foreground="White" BorderBrush="{x:Null}"/>
+                <Button Margin="0 0 16 2" Height="13" Width="70" FontSize="7" Content="Завантажити" Click="Load_Click" VerticalAlignment="Bottom" HorizontalAlignment="Right" Background="#FF2D3A43" Foreground="White" BorderBrush="{x:Null}"/>
+            </Grid>
+        </StackPanel>
+    </Grid>
+</Window>

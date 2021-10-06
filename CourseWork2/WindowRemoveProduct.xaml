@@ -1,0 +1,34 @@
+﻿<Window x:Class="CourseWork2.WindowRemoveProduct"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CourseWork2"
+        mc:Ignorable="d"
+       Title="Пошук, редагування та видалення товару" Height="500" Width="400">
+    <Grid>
+        <StackPanel VerticalAlignment="Top">
+            <ScrollViewer Margin="5 5 0 0" VerticalAlignment="Top" Height="203" Background="#FFF62451" Foreground="White" >
+                <TextBlock Margin="5 0 0 0" x:Name="ResultTextBlock" Background="#FF2D3A43"/>
+            </ScrollViewer>
+            <Label Margin="5 3 16 0" Content="Пошук за назвою:" Background="#FF2D3A43" BorderBrush="#FF2D3A43" Foreground="White"/>
+            <TextBox Margin="5 0 16 0" x:Name="NameTextBox" Text="" Background="#FF2D3A43" BorderBrush="#FF2D3A43" Foreground="White"/>
+            <Label Margin="5 3 16 0" Content="Пошук за кількістю:" Background="#FF2D3A43" BorderBrush="#FF2D3A43" Foreground="White"/>
+            <TextBox Margin="5 0 16 0" x:Name="QuantityTextBox" Text="" Background="#FF2D3A43" BorderBrush="#FF2D3A43" Foreground="White"/>
+            <Label Margin="5 3 16 0" Content="Пошук за ціною:" Background="#FF2D3A43" BorderBrush="#FF2D3A43" Foreground="White"/>
+            <TextBox Margin="5 0 16 0" x:Name="PriceTextBox" Text="" Background="#FF2D3A43" BorderBrush="#FF2D3A43" Foreground="White"/>
+            <Button Margin="5 0 16 0" Content="Пошук" Click="Search_Click" Background="#FF2D3A43" BorderBrush="#FF2D3A43" Foreground="White"/>
+            <Label Margin="5 3 16 0" Content="Номер товару, який хочете удалити:" Background="#FF2D3A43" BorderBrush="#FF2D3A43" Foreground="White"/>
+            <TextBox Margin="5 0 16 0" x:Name="IndexTextBox" Background="#FF2D3A43" BorderBrush="#FF2D3A43" Foreground="White"/>
+            <Grid x:Name="Grid2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Button Grid.Column="0" Margin="5 0 0 0" Content="Удалити" Click="Remove_Click"  Background="#FF2D3A43" BorderBrush="#FF2D3A43" Foreground="White"/>
+                <Button Grid.Column="1" Margin="0 0 16 0" Content="Редагувати"  Click="Edit_Click" Background="#FF2D3A43" BorderBrush="#FF2D3A43" Foreground="White"/>
+            </Grid>
+            <Button Margin="5 3 16 0" Content="Назад" Click="Back_Click" Background="#FFF62451" BorderBrush="#FFF62451" Foreground="White" />
+        </StackPanel>
+    </Grid>
+</Window>

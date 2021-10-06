@@ -1,0 +1,2 @@
+cash 2112
+moneySpent 600

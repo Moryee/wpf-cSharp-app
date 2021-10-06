@@ -1,0 +1,24 @@
+﻿<Window x:Class="CourseWork2.WindowEditProduct"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CourseWork2"
+        mc:Ignorable="d"
+       Title="Редагувати товар" Height="500" Width="400">
+    <Grid>
+        <StackPanel VerticalAlignment="Center">
+            <ScrollViewer Margin="5 0 0 0" VerticalAlignment="Top" Height="228" Background="#FFF62451">
+                <TextBlock Margin="5 0 0 0" x:Name="ResultTextBlock" Background="#FF2D3A43" Foreground="White"/>
+            </ScrollViewer>
+            <Label Margin="5 2 16 0" Content="Редагувати назву:" Background="#FF2D3A43" BorderBrush="#FF2D3A43" Foreground="White"/>
+            <TextBox Margin="5 0 16 0" x:Name="NameTextBox" Text="" Background="#FF2D3A43" BorderBrush="#FF2D3A43" Foreground="White"/>
+            <Label Margin="5 2 16 0" Content="Редагувати кількість:" Background="#FF2D3A43" BorderBrush="#FF2D3A43" Foreground="White"/>
+            <TextBox Margin="5 0 16 0" x:Name="QuantityTextBox" Text="" Background="#FF2D3A43" BorderBrush="#FF2D3A43" Foreground="White"/>
+            <Label Margin="5 2 16 0" Content="Редагyвати ціну:" Background="#FF2D3A43" BorderBrush="#FF2D3A43" Foreground="White"/>
+            <TextBox Margin="5 0 16 0" x:Name="PriceTextBox" Text="" Background="#FF2D3A43" BorderBrush="#FF2D3A43" Foreground="White"/>
+            <Button Margin="5 20 16 0" Content="Редагувати" Click="Edit_Click" Background="#FF2D3A43" BorderBrush="#FF2D3A43" Foreground="White" />
+            <Button Margin="5 3 16 0" Content="Назад" Click="Back_Click" Background="#FFF62451" BorderBrush="#FFF62451" Foreground="White" />
+        </StackPanel>
+    </Grid>
+</Window>
